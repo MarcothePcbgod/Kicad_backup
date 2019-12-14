@@ -1,0 +1,20 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Display_16x2_I2C
+#
+DEF Display_16x2_I2C U 0 40 Y Y 1 F N
+F0 "U" 425 150 50 H V C CNN
+F1 "Display_16x2_I2C" 0 150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+S -350 50 50 -150 0 1 0 N
+X Vcc 1 -300 -350 200 U 39 39 1 1 I
+X SCL 2 -200 -350 200 U 39 39 1 1 I
+X SDA 3 -100 -350 200 U 39 39 1 1 I
+X GND 4 0 -350 200 U 39 39 1 1 I
+ENDDRAW
+ENDDEF
+#
+#End Library
