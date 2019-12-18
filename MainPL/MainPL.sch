@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:MainPL-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -1774,7 +1773,7 @@ $EndComp
 Text Label 9150 7025 0    50   ~ 0
 Servo
 $Comp
-L MCU_Microchip_ATmega:ATmega328P-PU U2
+L MainPL-rescue:ATmega328P-PU-MCU_Microchip_ATmega U2
 U 1 1 5DE0CE2B
 P 6950 7775
 F 0 "U2" H 6306 7821 50  0000 R CNN
@@ -1945,17 +1944,6 @@ Wire Wire Line
 Connection ~ 4150 2975
 Wire Wire Line
 	4150 2975 4425 2975
-$Comp
-L 74xx:74LS32 U4
-U 1 1 5E06A540
-P 5000 6300
-F 0 "U4" V 4954 6488 50  0000 L CNN
-F 1 "74LS32" V 5045 6488 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5000 6300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 5000 6300 50  0001 C CNN
-	1    5000 6300
-	0    1    1    0   
-$EndComp
 Connection ~ 6575 3900
 Wire Wire Line
 	6575 3900 6900 3900
@@ -2329,36 +2317,6 @@ F 3 "~" H 1350 6225 50  0001 C CNN
 $EndComp
 Wire Bus Line
 	6950 5650 6950 6775
-Wire Bus Line
-	1250 2225 1250 5650
-Wire Bus Line
-	6225 3400 6225 5650
-Wire Bus Line
-	3725 2475 3725 5650
-Wire Bus Line
-	3275 5650 3275 7325
-Wire Bus Line
-	1250 5650 3275 5650
-Wire Bus Line
-	9150 4975 9150 5600
-Wire Bus Line
-	12525 4500 12525 6900
-Wire Bus Line
-	7550 6900 10325 6900
-Wire Bus Line
-	3325 7625 3325 9150
-Wire Bus Line
-	8750 3175 12550 3175
-Wire Bus Line
-	8750 3175 8750 4800
-Wire Bus Line
-	6175 2225 9825 2225
-Wire Bus Line
-	6175 2225 6175 3875
-Wire Bus Line
-	3675 1250 3675 3625
-Wire Bus Line
-	3675 1250 7450 1250
 $Comp
 L Interface_Expansion:MCP23017_SP U3
 U 1 1 5E522800
@@ -2391,5 +2349,46 @@ F 2 "Package_DIP:DIP-28_W7.62mm_Socket_LongPads" H 7800 3100 50  0001 L CNN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 7800 3000 50  0001 L CNN
 	1    7600 4100
 	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	1250 2225 1250 5650
+Wire Bus Line
+	6225 3400 6225 5650
+Wire Bus Line
+	3725 2475 3725 5650
+Wire Bus Line
+	3275 5650 3275 7325
+Wire Bus Line
+	1250 5650 3275 5650
+Wire Bus Line
+	9150 4975 9150 5600
+Wire Bus Line
+	12525 4500 12525 6900
+Wire Bus Line
+	7550 6900 10325 6900
+Wire Bus Line
+	3325 7625 3325 9150
+Wire Bus Line
+	8750 3175 12550 3175
+Wire Bus Line
+	8750 3175 8750 4800
+Wire Bus Line
+	6175 2225 9825 2225
+Wire Bus Line
+	6175 2225 6175 3875
+Wire Bus Line
+	3675 1250 3675 3625
+Wire Bus Line
+	3675 1250 7450 1250
+$Comp
+L 74xx:74LS32 U1
+U 2 1 5E02EBD5
+P 5000 6300
+F 0 "U1" V 4954 6488 50  0000 L CNN
+F 1 "74LS32" V 5045 6488 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5000 6300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 5000 6300 50  0001 C CNN
+	2    5000 6300
+	0    1    1    0   
 $EndComp
 $EndSCHEMATC
