@@ -1,0 +1,6 @@
+(sym_lib_table
+  (lib (name MainPL-rescue)(type Legacy)(uri ${KIPRJMOD}/MainPL-rescue.lib)(options "")(descr ""))
+  (lib (name Buffer_74HC589)(type Legacy)(uri ${KIPRJMOD}/Buffer_74HC589.lib)(options "")(descr ""))
+  (lib (name MCP)(type Legacy)(uri ${KIPRJMOD}/MCP.lib)(options "")(descr ""))
+  (lib (name MCPbyMS)(type Legacy)(uri ${KIPRJMOD}/MCPbyMS.lib)(options "")(descr ""))
+)
