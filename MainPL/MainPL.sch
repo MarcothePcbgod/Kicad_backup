@@ -1669,7 +1669,7 @@ U 1 1 5EDEB45E
 P 9550 7025
 F 0 "J15" H 9522 6957 50  0000 R CNN
 F 1 "Conn_01x01_Male" H 9522 7048 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal" H 9550 7025 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 9550 7025 50  0001 C CNN
 F 3 "~" H 9550 7025 50  0001 C CNN
 	1    9550 7025
 	-1   0    0    1   
@@ -2135,7 +2135,7 @@ U 1 1 5E27283F
 P 2550 7625
 F 0 "J7" H 2658 8206 50  0000 C CNN
 F 1 "Conn_01x09_Male" H 2658 8115 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Horizontal" H 2550 7625 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 2550 7625 50  0001 C CNN
 F 3 "~" H 2550 7625 50  0001 C CNN
 	1    2550 7625
 	1    0    0    -1  
@@ -2367,6 +2367,8 @@ Wire Notes Line
 	2025 6350 950  6350
 Wire Notes Line
 	950  6350 950  5825
+Text Notes 950  6450 0    50   ~ 0
+LCD-Display
 Wire Bus Line
 	1250 2225 1250 5650
 Wire Bus Line
@@ -2397,6 +2399,4 @@ Wire Bus Line
 	3675 1250 3675 3625
 Wire Bus Line
 	3675 1250 7450 1250
-Text Notes 950  6450 0    50   ~ 0
-LCD-Display
 $EndSCHEMATC
