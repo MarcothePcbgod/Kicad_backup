@@ -492,8 +492,6 @@ Text Label 4750 1075 1    50   ~ 0
 R2
 Text Label 4850 1075 1    50   ~ 0
 G2
-Text Label 3325 3525 0    50   ~ 0
-B2
 Text Label 5050 1075 1    50   ~ 0
 DATA2
 $Comp
@@ -716,36 +714,6 @@ Wire Wire Line
 	3300 3625 3575 3625
 Wire Wire Line
 	3300 3725 3575 3725
-Text Label 3325 2125 0    50   ~ 0
-DATA1
-Text Label 3325 2225 0    50   ~ 0
-DATA2
-Text Label 3325 2325 0    50   ~ 0
-DATA3
-Text Label 3325 2425 0    50   ~ 0
-DATA4
-Text Label 3425 2525 2    50   ~ 0
-R1
-Text Label 3325 2625 0    50   ~ 0
-R2
-Text Label 3325 2725 0    50   ~ 0
-R3
-Text Label 3325 2825 0    50   ~ 0
-R4
-Text Label 3325 3025 0    50   ~ 0
-G1
-Text Label 3325 3125 0    50   ~ 0
-G2
-Text Label 3325 3225 0    50   ~ 0
-G3
-Text Label 3325 3325 0    50   ~ 0
-G4
-Text Label 3325 3425 0    50   ~ 0
-B1
-Text Label 3325 3625 0    50   ~ 0
-B3
-Text Label 3325 3725 0    50   ~ 0
-B4
 $Comp
 L power:+5V #PWR019
 U 1 1 5E2580F0
@@ -1157,38 +1125,6 @@ Wire Wire Line
 	9625 1825 9625 2125
 Wire Wire Line
 	9725 1825 9725 2125
-Text Label 5850 2375 0    50   ~ 0
-DATA5
-Text Label 5850 2475 0    50   ~ 0
-DATA6
-Text Label 5850 2575 0    50   ~ 0
-DATA7
-Text Label 5850 2675 0    50   ~ 0
-DATA8
-Text Label 5850 2775 0    50   ~ 0
-R5
-Text Label 5850 2875 0    50   ~ 0
-R6
-Text Label 5850 2975 0    50   ~ 0
-R7
-Text Label 5850 3075 0    50   ~ 0
-R8
-Text Label 5850 3275 0    50   ~ 0
-G5
-Text Label 5850 3375 0    50   ~ 0
-G6
-Text Label 5850 3475 0    50   ~ 0
-G7
-Text Label 5850 3575 0    50   ~ 0
-G8
-Text Label 5850 3675 0    50   ~ 0
-B5
-Text Label 5850 3775 0    50   ~ 0
-B6
-Text Label 5850 3875 0    50   ~ 0
-B7
-Text Label 5850 3975 0    50   ~ 0
-B8
 $Comp
 L Connector:Conn_01x06_Female J10
 U 1 1 5E5F182C
@@ -1637,38 +1573,6 @@ Text Label 11325 3050 1    50   ~ 0
 DATA11
 Text Label 12450 3050 1    50   ~ 0
 DATA12
-Text Label 8350 3300 0    50   ~ 0
-DATA9
-Text Label 8350 3400 0    50   ~ 0
-DATA10
-Text Label 8350 3500 0    50   ~ 0
-DATA11
-Text Label 8350 3600 0    50   ~ 0
-DATA12
-Text Label 8350 3700 0    50   ~ 0
-R9
-Text Label 8350 3800 0    50   ~ 0
-R10
-Text Label 8350 3900 0    50   ~ 0
-R11
-Text Label 8350 4000 0    50   ~ 0
-R12
-Text Label 8350 4200 0    50   ~ 0
-G9
-Text Label 8350 4300 0    50   ~ 0
-G10
-Text Label 8350 4400 0    50   ~ 0
-G11
-Text Label 8350 4500 0    50   ~ 0
-G12
-Text Label 8350 4600 0    50   ~ 0
-B9
-Text Label 8350 4700 0    50   ~ 0
-B10
-Text Label 8350 4800 0    50   ~ 0
-B11
-Text Label 8350 4900 0    50   ~ 0
-B12
 Text Label 2850 7325 0    50   ~ 0
 SCL
 Text Label 2850 7425 0    50   ~ 0
@@ -1765,7 +1669,7 @@ U 1 1 5EDEB45E
 P 9550 7025
 F 0 "J15" H 9522 6957 50  0000 R CNN
 F 1 "Conn_01x01_Male" H 9522 7048 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 9550 7025 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Horizontal" H 9550 7025 50  0001 C CNN
 F 3 "~" H 9550 7025 50  0001 C CNN
 	1    9550 7025
 	-1   0    0    1   
@@ -2205,8 +2109,6 @@ Text Label 7650 7150 1    50   ~ 0
 CLK
 Text Label 7850 7150 1    39   ~ 0
 CLK_INH
-Text Notes 12175 6100 0    50   ~ 0
-5V???\n
 Wire Notes Line
 	11525 5475 12475 5475
 Wire Notes Line
@@ -2350,6 +2252,17 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/20001952C.pdf" H 7800 3000 
 	1    7600 4100
 	1    0    0    -1  
 $EndComp
+$Comp
+L 74xx:74LS32 U1
+U 2 1 5E02EBD5
+P 5000 6300
+F 0 "U1" V 4954 6488 50  0000 L CNN
+F 1 "74LS32" V 5045 6488 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5000 6300 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 5000 6300 50  0001 C CNN
+	2    5000 6300
+	0    1    1    0   
+$EndComp
 Wire Bus Line
 	1250 2225 1250 5650
 Wire Bus Line
@@ -2380,15 +2293,100 @@ Wire Bus Line
 	3675 1250 3675 3625
 Wire Bus Line
 	3675 1250 7450 1250
-$Comp
-L 74xx:74LS32 U?
-U 2 1 5E02EBD5
-P 5000 6300
-F 0 "U?" V 4954 6488 50  0000 L CNN
-F 1 "74LS32" V 5045 6488 50  0000 L CNN
-F 2 "" H 5000 6300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 5000 6300 50  0001 C CNN
-	2    5000 6300
-	0    1    1    0   
-$EndComp
+Text Label 3425 2125 2    50   ~ 0
+R1
+Text Label 3325 2225 0    50   ~ 0
+G1
+Text Label 3325 2525 0    50   ~ 0
+R2
+Text Label 3325 2625 0    50   ~ 0
+G2
+Text Label 3325 2825 0    50   ~ 0
+DATA2
+Text Label 3325 2725 0    50   ~ 0
+B2
+Text Label 3325 2325 0    50   ~ 0
+B1
+Text Label 3325 2425 0    50   ~ 0
+DATA1
+Text Label 3325 3025 0    50   ~ 0
+DATA3
+Text Label 3325 3125 0    50   ~ 0
+B3
+Text Label 3325 3225 0    50   ~ 0
+G3
+Text Label 3325 3325 0    50   ~ 0
+R3
+Text Label 3325 3425 0    50   ~ 0
+DATA4
+Text Label 3325 3525 0    50   ~ 0
+B4
+Text Label 3325 3625 0    50   ~ 0
+G4
+Text Label 3325 3725 0    50   ~ 0
+R4
+Text Label 5850 2375 0    50   ~ 0
+R5
+Text Label 5850 2475 0    50   ~ 0
+G5
+Text Label 5850 2575 0    50   ~ 0
+B5
+Text Label 5850 2675 0    50   ~ 0
+DATA5
+Text Label 5850 2775 0    50   ~ 0
+R6
+Text Label 5850 2875 0    50   ~ 0
+G6
+Text Label 5850 2975 0    50   ~ 0
+B6
+Text Label 5850 3075 0    50   ~ 0
+DATA6
+Text Label 8375 3300 0    50   ~ 0
+R9
+Text Label 8375 3400 0    50   ~ 0
+G9
+Text Label 5850 3275 0    50   ~ 0
+DATA7
+Text Label 5850 3375 0    50   ~ 0
+B7
+Text Label 5850 3475 0    50   ~ 0
+G7
+Text Label 5850 3575 0    50   ~ 0
+R7
+Text Label 5850 3675 0    50   ~ 0
+DATA8
+Text Label 5850 3775 0    50   ~ 0
+B8
+Text Label 5850 3875 0    50   ~ 0
+G8
+Text Label 5850 3975 0    50   ~ 0
+R8
+Text Label 8375 3500 0    50   ~ 0
+B9
+Text Label 8375 3600 0    50   ~ 0
+DATA9
+Text Label 8375 3700 0    50   ~ 0
+R10
+Text Label 8375 3800 0    50   ~ 0
+G10
+Text Label 8375 3900 0    50   ~ 0
+B10
+Text Label 8375 4000 0    50   ~ 0
+DATA10
+Text Label 8375 4200 0    50   ~ 0
+DATA11
+Text Label 8375 4300 0    50   ~ 0
+B11
+Text Label 8375 4400 0    50   ~ 0
+G11
+Text Label 8375 4500 0    50   ~ 0
+R11
+Text Label 8375 4600 0    50   ~ 0
+DATA12
+Text Label 8375 4700 0    50   ~ 0
+B12
+Text Label 8375 4800 0    50   ~ 0
+G12
+Text Label 8375 4900 0    50   ~ 0
+R12
 $EndSCHEMATC
