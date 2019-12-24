@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:Parkplatz-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -20,7 +19,7 @@ U 1 1 5DCA9AD6
 P 4875 4000
 F 0 "J1" H 4769 3475 50  0000 C CNN
 F 1 "Conn_01x06_Female" H 4769 3566 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x06_P2.54mm_Vertical" H 4875 4000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 4875 4000 50  0001 C CNN
 F 3 "~" H 4875 4000 50  0001 C CNN
 	1    4875 4000
 	-1   0    0    1   
@@ -122,39 +121,6 @@ F 3 "~" H 6325 3700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Connection ~ 6425 3700
-Wire Wire Line
-	6425 3700 6425 3600
-Wire Wire Line
-	5075 3700 6175 3700
-$Comp
-L Parkplatz-rescue:A1301KUA-T-Sensor_Magnetic U1
-U 1 1 5DCB1E2A
-P 6275 3075
-F 0 "U1" H 6045 3121 50  0000 R CNN
-F 1 "TLE49" H 6045 3030 50  0000 R CNN
-F 2 "Package_TO_SOT_THT:TO-92Flat" H 6275 2725 50  0001 L CIN
-F 3 "http://www.allegromicro.com/~/media/Files/Datasheets/A1301-2-Datasheet.ashx" H 6175 3075 50  0001 C CNN
-	1    6275 3075
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5075 3800 5650 3800
-Wire Wire Line
-	5650 3800 5650 2675
-Connection ~ 5650 3800
-Wire Wire Line
-	5650 3800 6500 3800
-Connection ~ 6175 3700
-Wire Wire Line
-	6175 3700 6225 3700
-Wire Wire Line
-	5650 2675 6175 2675
-Wire Wire Line
-	6175 3475 6175 3700
-Wire Wire Line
-	6425 3600 6575 3600
-Wire Wire Line
-	6575 3600 6575 3075
 $Comp
 L LED_ARGB_newP:LED_ARGB D1
 U 1 1 5DF03BEE
@@ -166,4 +132,41 @@ F 3 "~" H 6700 3975 50  0001 C CNN
 	1    6700 4025
 	-1   0    0    1   
 $EndComp
+$Comp
+L Connector:Conn_01x03_Female J2
+U 1 1 5DF8E617
+P 6400 3050
+F 0 "J2" H 6428 3076 50  0000 L CNN
+F 1 "Conn_01x03_Female" H 6428 2985 50  0000 L CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical" H 6400 3050 50  0001 C CNN
+F 3 "~" H 6400 3050 50  0001 C CNN
+	1    6400 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6200 3150 6200 3400
+Wire Wire Line
+	6200 3400 6425 3400
+Wire Wire Line
+	6425 3400 6425 3700
+Wire Wire Line
+	6200 3050 6050 3050
+Wire Wire Line
+	6050 3050 6050 3700
+Wire Wire Line
+	5075 3700 6050 3700
+Wire Wire Line
+	6050 3700 6225 3700
+Connection ~ 6050 3700
+Wire Wire Line
+	5075 3800 5650 3800
+Wire Wire Line
+	5650 3800 5650 2950
+Wire Wire Line
+	5650 2950 6200 2950
+Connection ~ 5650 3800
+Wire Wire Line
+	5650 3800 6500 3800
+Text Notes 5925 2725 0    50   ~ 0
+Datasheet schauen ob Pinbelegung stimmt\n
 $EndSCHEMATC
