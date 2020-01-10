@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:MainPL-cache
 EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
@@ -1818,48 +1817,17 @@ Wire Wire Line
 Connection ~ 8725 6150
 Wire Wire Line
 	8725 6150 8725 6250
-Wire Wire Line
-	1400 2725 1475 2725
-Wire Wire Line
-	3850 2975 4150 2975
-Wire Wire Line
-	6400 3900 6575 3900
 $Comp
 L 74xx:74LS32 U1
 U 1 1 5E03B617
-P 4050 4900
-F 0 "U1" V 4004 5088 50  0000 L CNN
-F 1 "74LS32" V 4095 5088 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 4050 4900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 4050 4900 50  0001 C CNN
-	1    4050 4900
+P 1525 3275
+F 0 "U1" V 1479 3463 50  0000 L CNN
+F 1 "74LS32" V 1570 3463 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 1525 3275 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 1525 3275 50  0001 C CNN
+	1    1525 3275
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1475 2725 1475 4475
-Wire Wire Line
-	1475 4475 3950 4475
-Wire Wire Line
-	3950 4475 3950 4600
-Connection ~ 1475 2725
-Wire Wire Line
-	1475 2725 1900 2725
-Wire Wire Line
-	4150 4600 4150 2975
-Connection ~ 4150 2975
-Wire Wire Line
-	4150 2975 4425 2975
-Connection ~ 6575 3900
-Wire Wire Line
-	6575 3900 6900 3900
-Wire Wire Line
-	4050 5200 4050 6000
-Wire Wire Line
-	4050 6000 4900 6000
-Wire Wire Line
-	5100 6000 6575 6000
-Wire Wire Line
-	6575 3900 6575 6000
 Wire Bus Line
 	1300 2825 1300 5600
 Wire Bus Line
@@ -2256,12 +2224,12 @@ $EndComp
 $Comp
 L 74xx:74LS32 U1
 U 2 1 5E02EBD5
-P 5000 6300
-F 0 "U1" V 4954 6488 50  0000 L CNN
-F 1 "74LS32" V 5045 6488 50  0000 L CNN
-F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5000 6300 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 5000 6300 50  0001 C CNN
-	2    5000 6300
+P 3975 3400
+F 0 "U1" V 3929 3588 50  0000 L CNN
+F 1 "74LS32" V 4020 3588 50  0000 L CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 3975 3400 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 3975 3400 50  0001 C CNN
+	2    3975 3400
 	0    1    1    0   
 $EndComp
 Text Label 3425 2125 2    50   ~ 0
@@ -2370,6 +2338,26 @@ Wire Notes Line
 	950  6350 950  5825
 Text Notes 950  6450 0    50   ~ 0
 LCD-Display
+Wire Wire Line
+	1400 2725 1425 2725
+Wire Wire Line
+	1425 2975 1425 2725
+Connection ~ 1425 2725
+Wire Wire Line
+	1425 2725 1900 2725
+Wire Wire Line
+	1625 2975 1625 2825
+Wire Wire Line
+	1625 2825 1900 2825
+Wire Wire Line
+	3850 2975 3875 2975
+Wire Wire Line
+	3875 3100 3875 2975
+Connection ~ 3875 2975
+Wire Wire Line
+	3875 2975 4075 2975
+Wire Wire Line
+	4075 3100 4075 2975
 Wire Bus Line
 	1250 2225 1250 5650
 Wire Bus Line
@@ -2400,4 +2388,9 @@ Wire Bus Line
 	3675 1250 3675 3625
 Wire Bus Line
 	3675 1250 7450 1250
+Connection ~ 4075 2975
+Wire Wire Line
+	4075 2975 4425 2975
+Wire Wire Line
+	6400 3900 6900 3900
 $EndSCHEMATC
