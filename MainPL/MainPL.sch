@@ -321,7 +321,7 @@ L power:+5V #PWR03
 U 1 1 5E12A32D
 P 2600 1800
 F 0 "#PWR03" H 2600 1650 50  0001 C CNN
-F 1 "+5V" H 2615 1973 50  0000 C CNN
+F 1 "+5V" H 2600 2025 50  0000 C CNN
 F 2 "" H 2600 1800 50  0001 C CNN
 F 3 "" H 2600 1800 50  0001 C CNN
 	1    2600 1800
@@ -719,7 +719,7 @@ L power:+5V #PWR019
 U 1 1 5E2580F0
 P 5125 2050
 F 0 "#PWR019" H 5125 1900 50  0001 C CNN
-F 1 "+5V" H 5140 2223 50  0000 C CNN
+F 1 "+5V" H 5125 2300 50  0000 C CNN
 F 2 "" H 5125 2050 50  0001 C CNN
 F 3 "" H 5125 2050 50  0001 C CNN
 	1    5125 2050
@@ -1278,7 +1278,7 @@ L power:+5V #PWR038
 U 1 1 5E61097B
 P 7600 2975
 F 0 "#PWR038" H 7600 2825 50  0001 C CNN
-F 1 "+5V" H 7615 3148 50  0000 C CNN
+F 1 "+5V" H 7600 3225 50  0000 C CNN
 F 2 "" H 7600 2975 50  0001 C CNN
 F 3 "" H 7600 2975 50  0001 C CNN
 	1    7600 2975
@@ -1740,20 +1740,6 @@ Wire Wire Line
 Wire Wire Line
 	10025 6175 10025 6225
 Entry Wire Line
-	1300 2825 1400 2725
-Entry Wire Line
-	3750 3075 3850 2975
-Entry Wire Line
-	6400 3900 6300 4000
-Wire Bus Line
-	1300 5600 3750 5600
-Connection ~ 3750 5600
-Wire Bus Line
-	3750 5600 6300 5600
-Connection ~ 6300 5600
-Wire Bus Line
-	6300 5600 9150 5600
-Entry Wire Line
 	9150 4975 9250 4875
 Entry Wire Line
 	9150 5075 9250 4975
@@ -1765,12 +1751,6 @@ Wire Wire Line
 	9250 4975 9525 4975
 Wire Wire Line
 	9525 5075 9250 5075
-Text Label 1675 2725 0    50   ~ 0
-INTB_1
-Text Label 4175 2975 0    50   ~ 0
-INTB_2
-Text Label 6675 3900 0    50   ~ 0
-INTB_3
 $Comp
 L Switch:SW_Push_Dual SW1
 U 1 1 5DFB15DE
@@ -1828,18 +1808,6 @@ F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 1525 3275 50  0001 C CNN
 	1    1525 3275
 	0    1    1    0   
 $EndComp
-Wire Bus Line
-	1300 2825 1300 5600
-Wire Bus Line
-	3750 3075 3750 5600
-Wire Bus Line
-	6300 4000 6300 5600
-Text Label 9325 4875 0    50   ~ 0
-INTB_1
-Text Label 9325 4975 0    50   ~ 0
-INTB_2
-Text Label 9325 5075 0    50   ~ 0
-INTB_3
 $Comp
 L power:GND #PWR055
 U 1 1 5E1C4F03
@@ -1936,8 +1904,6 @@ Text Label 7450 7125 1    50   ~ 0
 LE
 Text Label 8150 7125 1    50   ~ 0
 OE
-Wire Wire Line
-	5000 6600 5000 8975
 Wire Wire Line
 	8050 7025 9275 7025
 Wire Wire Line
@@ -2086,7 +2052,7 @@ Wire Notes Line
 	12475 6750 11525 6750
 Wire Notes Line
 	11525 6750 11525 5475
-Text Label 2900 7525 2    50   ~ 0
+Text Label 2950 7525 2    50   ~ 0
 LE
 Text Label 2875 7625 0    50   ~ 0
 Qh
@@ -2339,10 +2305,7 @@ Wire Notes Line
 Text Notes 950  6450 0    50   ~ 0
 LCD-Display
 Wire Wire Line
-	1400 2725 1425 2725
-Wire Wire Line
 	1425 2975 1425 2725
-Connection ~ 1425 2725
 Wire Wire Line
 	1425 2725 1900 2725
 Wire Wire Line
@@ -2350,22 +2313,124 @@ Wire Wire Line
 Wire Wire Line
 	1625 2825 1900 2825
 Wire Wire Line
-	3850 2975 3875 2975
-Wire Wire Line
 	3875 3100 3875 2975
-Connection ~ 3875 2975
 Wire Wire Line
-	3875 2975 4075 2975
+	3875 2975 4425 2975
 Wire Wire Line
-	4075 3100 4075 2975
+	4075 3100 4075 3075
+Wire Wire Line
+	4075 3075 4425 3075
+$Comp
+L 74xx:74LS32 U1
+U 3 1 5E1E7FA0
+P 6525 4350
+F 0 "U1" V 6479 4538 50  0000 L CNN
+F 1 "74LS32" V 6570 4538 50  0000 L CNN
+F 2 "" H 6525 4350 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 6525 4350 50  0001 C CNN
+	3    6525 4350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6425 4050 6425 3900
+Wire Wire Line
+	6425 3900 6900 3900
+Wire Wire Line
+	6625 4050 6625 4000
+Wire Wire Line
+	6625 4000 6900 4000
+Wire Bus Line
+	9150 5600 6425 5600
+Wire Bus Line
+	3875 5600 3875 3825
+Connection ~ 3875 5600
+Wire Bus Line
+	6425 5600 6425 4775
+Connection ~ 6425 5600
+Wire Bus Line
+	6425 5600 3875 5600
+Entry Wire Line
+	6425 4775 6525 4675
+Entry Wire Line
+	3875 3825 3975 3725
+Entry Wire Line
+	1425 3725 1525 3625
+Wire Bus Line
+	1425 3725 1425 5600
+Wire Bus Line
+	1425 5600 3875 5600
+Text Label 6525 4675 0    50   ~ 0
+MCP3
+Text Label 3975 3725 0    50   ~ 0
+MCP2
+Text Label 1525 3625 0    50   ~ 0
+MCP1
+Text Label 9275 5075 0    50   ~ 0
+MCP3
+Text Label 9275 4975 0    50   ~ 0
+MCP2
+Text Label 9275 4875 0    50   ~ 0
+MCP1
+$Comp
+L 74xx:74LS32 U1
+U 5 1 5E321082
+P 1550 8875
+F 0 "U1" H 1780 8921 50  0000 L CNN
+F 1 "74LS32" H 1780 8830 50  0000 L CNN
+F 2 "" H 1550 8875 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS32" H 1550 8875 50  0001 C CNN
+	5    1550 8875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5E32718B
+P 1550 9450
+F 0 "#PWR0105" H 1550 9200 50  0001 C CNN
+F 1 "GND" H 1700 9350 50  0000 C CNN
+F 2 "" H 1550 9450 50  0001 C CNN
+F 3 "" H 1550 9450 50  0001 C CNN
+	1    1550 9450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 5E327769
+P 1550 8300
+F 0 "#PWR0106" H 1550 8150 50  0001 C CNN
+F 1 "+5V" H 1565 8473 50  0000 C CNN
+F 2 "" H 1550 8300 50  0001 C CNN
+F 3 "" H 1550 8300 50  0001 C CNN
+	1    1550 8300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1550 8300 1550 8375
+Wire Wire Line
+	1550 9450 1550 9375
+Wire Wire Line
+	5000 4825 3975 4825
+Wire Wire Line
+	5000 4825 5000 8975
+Connection ~ 3975 4825
+Wire Wire Line
+	3975 4825 1525 4825
+Wire Wire Line
+	5000 4825 6525 4825
+Wire Wire Line
+	6525 4650 6525 4675
+Wire Wire Line
+	3975 3700 3975 4825
+Wire Wire Line
+	1525 3575 1525 4825
+Wire Bus Line
+	3275 5650 3275 7325
 Wire Bus Line
 	1250 2225 1250 5650
 Wire Bus Line
 	6225 3400 6225 5650
 Wire Bus Line
 	3725 2475 3725 5650
-Wire Bus Line
-	3275 5650 3275 7325
 Wire Bus Line
 	1250 5650 3275 5650
 Wire Bus Line
@@ -2388,9 +2453,8 @@ Wire Bus Line
 	3675 1250 3675 3625
 Wire Bus Line
 	3675 1250 7450 1250
-Connection ~ 4075 2975
+Connection ~ 5000 4825
+Connection ~ 6525 4675
 Wire Wire Line
-	4075 2975 4425 2975
-Wire Wire Line
-	6400 3900 6900 3900
+	6525 4675 6525 4825
 $EndSCHEMATC
