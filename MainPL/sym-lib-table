@@ -3,4 +3,5 @@
   (lib (name Buffer_74HC589)(type Legacy)(uri ${KIPRJMOD}/Buffer_74HC589.lib)(options "")(descr ""))
   (lib (name MCP)(type Legacy)(uri ${KIPRJMOD}/MCP.lib)(options "")(descr ""))
   (lib (name MCPbyMS)(type Legacy)(uri ${KIPRJMOD}/MCPbyMS.lib)(options "")(descr ""))
+  (lib (name SW_Push_MS)(type Legacy)(uri ${KIPRJMOD}/SW_Push_MS.lib)(options "")(descr ""))
 )
